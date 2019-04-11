@@ -6,7 +6,7 @@
 " =================
 
 " Only load this indent file when no other was loaded.
-if exists("b:did_indent")
+if exists("b:did_indent") || get(g:, 'yats_indent_disable', 0)
   finish
 endif
 let b:did_indent = 1
